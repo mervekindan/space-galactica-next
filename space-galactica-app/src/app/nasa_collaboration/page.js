@@ -6,8 +6,6 @@ import { RoverPhoto } from "./RoverPhoto";
 
 const API_KEY = process.env.NEXT_PUBLIC_NASA_API_KEY;
 
-console.log(API_KEY);
-
 const NASA_URLs = {
     astronomyPicOfTheDay: `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`,
     marsRoverPhoto: `https://rovers.nebulum.one/api/v1//rovers/perseverance/photos?earth_date=2025-11-06`,
