@@ -16,7 +16,7 @@ export const navbarItems = [
 ];
 
 export const Navbar = () => {
-    const currentPath = usePathname().pathname;
+    const currentPath = usePathname();
     const { wishlistCount } = useContext(WishlistContext);
 
     return (
@@ -31,12 +31,16 @@ export const Navbar = () => {
                 <div className={styles.navbarBG} />
                 <ul className={styles.navbarList}>
                     {navbarItems.map((item, index) => (
-                        <li key={item.id}>
+                        <li
+                            key={item.id}
+                            className={classNames(styles.navbarLinks, {
+                                [styles.isLinkActive]:
+                                    item.link === currentPath,
+                            })}
+                        >
                             <NavItem
-                                key={index}
                                 title={item.title}
                                 link={item.link}
-                                isActive={item.link === currentPath}
                                 index={`0${index + 1}`}
                             />
                         </li>
