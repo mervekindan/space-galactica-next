@@ -1,6 +1,8 @@
 # Space Galactica
 
-Space Galactica is a responsive Next.js web application showcasing planetary destinations, crew, and NASA collaboration features. It includes a mobile-first navigation experience, a wishlist for saved planets, and modular components built with CSS Modules.
+![Space Galactica — app screenshot](public/space-galactica.jpg)
+
+Space Galactica is a responsive Next.js web application showcasing planetary destinations, crew, and NASA collaboration features. It includes a mobile navigation experience, a wishlist for saved planets, and modular components built with CSS Modules.
 
 ## Live Demo
 
@@ -51,25 +53,3 @@ npm start
 - `src/components/` — UI components and CSS module files
 - `src/contexts/` — React contexts (e.g., wishlist)
 - `public/` — Static assets (images, logos)
-
-## Deployment
-
-The project is ready for deployment on Vercel. Connect your repository to Vercel and follow the prompts, or use the Vercel CLI to deploy directly.
-
-## Contributing
-
-Contributions are welcome. To contribute:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes and submit a pull request
-
-Please include a clear description of changes and any relevant testing steps.
-
-## License
-
-See the `LICENSE` file for license information (if present).
-
----
-
-If you'd like, I can also add a short development checklist or update `package.json` scripts to match the README commands.
