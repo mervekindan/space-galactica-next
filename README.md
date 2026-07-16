@@ -1,40 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Space Galactica
+
+Space Galactica is a responsive Next.js web application showcasing planetary destinations, crew, and NASA collaboration features. It includes a mobile-first navigation experience, a wishlist for saved planets, and modular components built with CSS Modules.
 
 ## Live Demo
 
-[Space Galactica (Deployed Project)](https://space-galactica-next.vercel.app/)
+[View the deployed site](https://space-galactica-next.vercel.app/)
+
+## Key Features
+
+- Responsive layout with a mobile-friendly navigation and animated burger menu
+- Destination pages with wishlist functionality
+- NASA collaboration gallery and rover imagery components
+- Reusable UI components (cards, badges, logos) styled with CSS Modules
+
+## Tech Stack
+
+- Next.js (App Router)
+- React
+- CSS Modules
+- Vercel for deployment
 
 ## Getting Started
 
-First, run the development server:
+Prerequisites:
+
+- Node.js (16+ recommended)
+- npm, yarn, or pnpm
+
+Install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install && pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` in your browser to preview the site.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Build for production:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `app/` — Next.js app routes and pages
+- `src/components/` — UI components and CSS module files
+- `src/contexts/` — React contexts (e.g., wishlist)
+- `public/` — Static assets (images, logos)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The project is ready for deployment on Vercel. Connect your repository to Vercel and follow the prompts, or use the Vercel CLI to deploy directly.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome. To contribute:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes and submit a pull request
+
+Please include a clear description of changes and any relevant testing steps.
+
+## License
+
+See the `LICENSE` file for license information (if present).
+
+---
+
+If you'd like, I can also add a short development checklist or update `package.json` scripts to match the README commands.
