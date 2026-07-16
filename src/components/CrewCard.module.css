@@ -1,37 +1,32 @@
-:root {
-    --primary-900: rgb(25, 27, 49);
-    --primary-300: #b1b6fa;
-}
-
 .crewCard {
-    background-color: var(--primary-900);
-    display: flex;
-    padding: 32px;
-    padding-bottom: 0;
-    gap: 32px;
-    text-align: left;
+  background-color: var(--secondary-900);
+  display: flex;
+  padding: 32px;
+  padding-bottom: 0;
+  gap: 32px;
+  text-align: left;
 }
 
 .crewImg {
-    width: 160px;
-    height: auto;
-    max-height: 160px;
-    object-fit: contain;
+  width: 160px;
+  height: auto;
+  max-height: 160px;
+  object-fit: contain;
 }
 
 .textContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .name {
-    font-size: 20px;
-    margin-bottom: 16px;
-    color: var(--primary-300);
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: var(--secondary-300);
 }
 
 .summary {
-    font-size: 12px;
-    line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.5;
 }

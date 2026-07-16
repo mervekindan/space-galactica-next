@@ -10,7 +10,7 @@
   height: var(--header-height);
   max-height: var(--header-height);
   align-items: center;
-  z-index: 10;
+  z-index: 100;
 }
 
 .decorativeLine {
@@ -45,7 +45,6 @@
   padding: 0 var(--spacing-8);
   margin: var(--spacing-20);
   background-color: transparent;
-
 }
 
 .navbarBG {
@@ -71,7 +70,122 @@
   letter-spacing: 1px;
 }
 
-.navbarLinks:hover, .isLinkActive {
+.navbarLinks:hover,
+.isLinkActive {
   border-block-end: var(--spacing-04) solid var(--border-color);
   margin-block-end: -4px;
+}
+
+@media (max-width: 768px) {
+  .headerContainer {
+    padding: var(--spacing-12) var(--spacing-16);
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .decorativeLine {
+    display: none;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .navbarBG {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    background: transparent;
+    border: none;
+    padding: var(--spacing-08);
+    margin-left: auto;
+    z-index: 30;
+  }
+
+  .burgerBar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    margin: 4px 0;
+    border-radius: 2px;
+  }
+
+  .navbarList {
+    display: none;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--secondary-900);
+    z-index: 999;
+    align-items: flex-start;
+    padding: var(--spacing-12) var(--spacing-16);
+  }
+
+  .overlayHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: var(--spacing-12);
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: var(--spacing-12);
+  }
+
+  .overlayLogo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+    color: #fff;
+    font-size: large;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .overlayLogo img {
+    height: 40px;
+  }
+
+  .overlayBadge {
+    margin-left: auto;
+  }
+
+  .overlayRight {
+    display: flex;
+    align-items: center;
+  }
+
+  .overlayClose {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    padding: var(--spacing-08);
+    cursor: pointer;
+  }
+
+  .navbarLinks {
+    padding: 0;
+  }
+
+  .burgerClose {
+    color: #fff;
+    font-size: 28px;
+    line-height: 1;
+    display: inline-block;
+  }
+
+  .mobileOpen {
+    display: flex;
+  }
 }
